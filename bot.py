@@ -20,13 +20,32 @@ SHEET_ID = os.getenv("GOOGLE_SHEET_ID")
 openai.api_key = OPENAI_API_KEY
 # --- Google Sheets Setup ---
 def get_sheet():
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    creds_path = os.path.join(BASE_DIR, "GOOGLE_CREDS_JSON")
+    creds_json = os.environ.get("GOOGLE_CREDS_JSON")
 
-    creds = Credentials.from_service_account_file(creds_path, scopes=[
-        "https://spreadsheets.google.com/feeds",
-        "https://www.googleapis.com/auth/drive"
-    ])
+    if not creds_json:
+        raise Exception("GOOGLE_CREDS_JSON environment variable not found")
+
+    creds_dict = json.loads(creds_json)
+
+    creds = Credentials.from_service_account_info(
+        creds_dict,
+        scopes=[
+            "https://spreadsheets.google.com/feeds",
+            "https://www.googleapis.com/auth/drive"
+        ]
+    )
+
+    client = gspread.authorize(creds)
+    sheet = client.open_by_key(SHEET_ID).worksheet("Expenses")
+
+    # Check header row
+    existing_headers = sheet.row_values(1)
+
+    if existing_headers != HEADERS:
+        sheet.delete_rows(1)
+        sheet.insert_row(HEADERS, 1)
+
+    return sheet
 
     client = gspread.authorize(creds)
     sheet = client.open_by_key(SHEET_ID).worksheet("Expenses")
