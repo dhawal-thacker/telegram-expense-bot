@@ -21,7 +21,7 @@ openai.api_key = OPENAI_API_KEY
 # --- Google Sheets Setup ---
 def get_sheet():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    creds_path = os.path.join(BASE_DIR, "ancient-figure-466107-b5-a6c1e7b63ef9.json")
+    creds_path = os.path.join(BASE_DIR, "GOOGLE_CREDS_JSON")
 
     creds = Credentials.from_service_account_file(creds_path, scopes=[
         "https://spreadsheets.google.com/feeds",
