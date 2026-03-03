@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ancient-figure-466107-b5",
+  "private_key_id": "a6c1e7b63ef90518c52724f59f89a21abbd14dc9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTtpE4qBBwMEmW\ndgPb1vgVy/t2tu1RZjSJiIlrgBL5sxslQzHNCDjDXrrkqH2SgBitS3g+zfSNb3/J\nLKP0xKWJXN9A7Kd6Yj7TLpfnqdwGCYHnROlouGkh/AWn8c9MZoBagvvxqtwBUpTT\njso6FSA7Q7wac9w8nUBnGJ5r8HwZO/4IFR8r8Yi8odANcCLcoLHmQjOiRL2DyjGY\n+zQUgMHjzl/skiBkfqNojVD0MIxrdeUDx3FmTD404X/+P3why/9LQHvb2egj0xFX\nr8CzPsq7frkmyGbqLc7P8iqsMmA6cjymu73NGdZqJyBjxqY8IiheMWUwyP9PmwAH\noNCAUO0nAgMBAAECggEAYiqhI5gqJxr8xBtspp8C4Xh33Q/s8nVlnvAEaCg2pDl8\nOMbzbJKHX2+pUSUfNLLYvmHkG5r77ijpI6rjSzdzWkIJ8tzIu2KapulP3kdQkiwO\nY+H8KGZ5uRxWswzYhiBxG4bos6H56VMVVxM6ibwJ+fDqY4mdcS2pEyTDMGGN6VSj\n6Ar3uHAepMY7pzmLNisG2lsbylW9sghLT7EMVMGEjJxjFHaeVERsO1+moGTwCrvC\nfVqJDJAL2QvX/6+f1CekjN7T4GSR3lhqpC1xwLmPJ7WlcdMprpXh0NFWEIQN8r0k\nNxLR+p+kakMPg4qW/we/jE3KJQ+J3rAvB5+1UDvngQKBgQDxX2xkE/aJU64ezwi5\n+sPPGnivQ1iqkZkDPyX7zaiLfWxQwDENHgu+ySj1Xp9XrSKxUaudlfQ1NmWeMfXs\nzzJxhRGVnfPRxieLzHvzUijpNpucpY/TvnTp9N89uXOD0xELNkjtVYmIBFdKHcH3\ngYKL2l1LJTuH9fYRyBgJaXZLEQKBgQDgiwPIk+M3CXq/li0Ga6qzpD5UCVFNE4CP\nosBTwjqzB3MDAFse+kTs6fcx1Sh4ccy0cc4iZ28ujr7dJtXyoY67IG4tUQBi1a5p\nTNx5yofhcOXUxGihtqCG/EXrWU2Mladtc+TN3DRalIViXaf+NTEhFJ2O/DS/6nV4\nV5rdiEUEtwKBgQDrDX8TcnFaSFg+/mTEIBTBQUkXfCEDcegtRjiqHxusQ0bQ2Gis\nGn9bmq+9SxknG562SQ8z1gzMKR4KUSLpKtk3vVtjdT80IKDwPgDS8kaO3bPqdzw5\n+rYGA4XGqSt5y3hEj+ey3+Kfx4Jt1c7HRaKoqMzDWg3AGGE57b6io8Yj0QKBgDeK\ny3XK9xI/GwjXCe4jpcbn4q8A2wZ4w31EIdTWH5T3S8C7Ts7b0z7TJN1Dv84DQEKG\nQBoMgdj/YEDuAVASHG83N2moNrM77feIFqVdrrzaI0+9AbC2rwCU2Gq93UvgHNkb\nKMavKJgbUt8hEZP07mEja1HaGuY6BbKt4NXZhlEDAoGBAI8ty529QVKHyPj3+Znl\nHQwE6/HuuBS76LdzmcTfCYkhPAuckwFrRQrlejPd4/z5X7Xvdu+X+yYMlu+gDiIM\nJHyTOKsSAuvzt+I7Hm+urVBGHY+FfLDgaW6bXFh9XEIWjYvKjMVoja1SCimFZl6v\ni5O9q51xi0+yYawNoYrN5L2x\n-----END PRIVATE KEY-----\n",
+  "client_email": "expense-bot-service@ancient-figure-466107-b5.iam.gserviceaccount.com",
+  "client_id": "113621616095066286568",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/expense-bot-service%40ancient-figure-466107-b5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
