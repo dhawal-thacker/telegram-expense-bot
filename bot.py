@@ -46,19 +46,6 @@ def get_sheet():
         sheet.insert_row(HEADERS, 1)
 
     return sheet
-
-    client = gspread.authorize(creds)
-    sheet = client.open_by_key(SHEET_ID).worksheet("Expenses")
-
-    # Check header row
-    existing_headers = sheet.row_values(1)
-
-    if existing_headers != HEADERS:
-        sheet.delete_rows(1)
-        sheet.insert_row(HEADERS, 1)
-
-    return sheet
-
 # --- Parse expense from text using LLM ---
 def parse_expense_text(text: str) -> dict:
     response = openai.chat.completions.create(
