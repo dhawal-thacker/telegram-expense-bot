@@ -8,6 +8,9 @@ from datetime import datetime
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+from datetime import datetime
+
+today = datetime.today().strftime("%Y-%m-%d")
 
 # Load environment variables
 load_dotenv()
