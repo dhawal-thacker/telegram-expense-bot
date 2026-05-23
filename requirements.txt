@@ -3,4 +3,4 @@ openai
 gspread
 google-auth
 python-dotenv
-
+dateparser
