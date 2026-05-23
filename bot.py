@@ -212,3 +212,12 @@ app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
 app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
 app.add_handler(CommandHandler("start", start))
 app.run_polling()
+
+#--For Google cloud Run
+PORT = int(os.getenv("PORT", 8080))
+
+app.run_webhook(
+    listen="0.0.0.0",
+    port=PORT,
+    webhook_url=os.getenv("WEBHOOK_URL")
+)
