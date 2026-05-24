@@ -4,3 +4,4 @@ gspread
 google-auth
 python-dotenv
 dateparser
+python-telegram-bot[webhooks]
