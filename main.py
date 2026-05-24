@@ -12,6 +12,11 @@ from datetime import datetime
 
 today = datetime.today().strftime("%Y-%m-%d")
 
+# At the top, after load_dotenv()
+required = ["TELEGRAM_BOT_TOKEN", "OPENAI_API_KEY", "GOOGLE_SHEET_ID", "GOOGLE_CREDS_JSON"]
+for var in required:
+    if not os.getenv(var):
+        raise EnvironmentError(f"Missing required env var: {var}")
 # Load environment variables
 load_dotenv()
 
