@@ -211,7 +211,8 @@ app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
 app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
 app.add_handler(CommandHandler("start", start))
-app.run_polling()
+#--removed below on ChatGPT reco--
+#app.run_polling()
 
 #--For Google cloud Run
 PORT = int(os.getenv("PORT", 8080))
