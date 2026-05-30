@@ -5,3 +5,5 @@ google-auth
 python-dotenv
 dateparser
 python-telegram-bot[webhooks]
+supabase==2.3.4
+httpx==0.24.1
