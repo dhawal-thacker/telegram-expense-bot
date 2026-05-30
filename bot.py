@@ -108,7 +108,10 @@ def save_to_sheet(data: dict, user):
     row = [row_data.get(col, "") for col in HEADERS]
     sheet.append_row(row)
     print("Saved to Google Sheets")
+    print(f"Calling Supabase with URL: {SUPABASE_URL}")
+    print(f"Supabase key set: {bool(SUPABASE_KEY)}")
     save_to_supabase(data, user)
+    print("Supabase call completed")
 
 # --- Parse expense from text ---
 def parse_expense_text(text: str) -> dict:
